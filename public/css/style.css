@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+    align-items: center;
+}
+
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    z-index: 10;
+}
+
+.header .logo{
+    width: 100%;
+}
+
+.header .title{
+    font-size: 2.2rem;
+}
+
+.intro{
+    padding: 14px 12px;
+}
+
+.intro .heading{
+    color: dodgerblue;
+    font-size: 2rem;
+    text-decoration: underline;
+    display: block;
+}
+
+.intro .introduction{
+    padding: 14px 10px;
+}
+
+.post{
+    padding: 14px 12px;
+}
+
+.post .single-post{
+    border: 1px solid #ddd;
+    background: #fafafa;
+    margin: 7px 6px;
+    padding: 12px;
+}
+
+.post .single-post .img img{
+    width: 100%;
+}.single-post .img img{
+    width: 100%;
+}
+
+.post .title{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.post .description{
+    font-size: 1rem;
+    
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post .view{
+    padding: 14px 0;
+    margin-top: 5px;
+}
+
+.post .view a{
+    padding: 10px 14px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.post .view a:hover{
+    background: #1c71c5;
+}
+
+
+
+.footer{
+    padding: 14px 12px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+.gototop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 20px;
+    background-color: #222;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.gototop:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #222;
+    transition: 0.6s;
+}
+
+.divt{
+    background-color: #222;
+    color: #fff;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.showall{
+    text-align: center;
+    margin: 14px;
+}
+
+
+.showall a{
+    padding: 10px 14px;
+    background: #222;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.showall a:hover{
+    background: #444;
+}
+
+.right{
+    float: right;
+}
+
+.right a{
+    text-decoration: none;
+}
+
+.editor input, .editor textarea{
+    width: 100%;
+    padding: 10px 14px;
+    margin: 14px 0;
+    border: 1px solid #ccc;
+}

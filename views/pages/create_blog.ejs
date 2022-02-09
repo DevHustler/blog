@@ -1,0 +1,30 @@
+<%- include('../partials/header'); %>
+<div class="container post">
+    <div class="row divt">
+        <div class="col-12" style="text-align: center;">
+            <span>Basic Actions</span>
+        </div>
+    </div>
+    <div class="col-12 showall"><br>
+        <a href="/create">Create Post</a><br><br>
+    </div>
+    <div class="row divt">
+        <div class="col-12" style="text-align: center;">
+            <span>Create/Update Post</span>
+        </div>
+    </div>
+    <div class="row">
+        <% for(var i = 0; i < posts.length; i++){ %>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="single-post">
+                <div class="title"><%= posts[i].title %></div>
+                <div class="description"><%= posts[i].desc %></div>
+                <div class="view"><a href="/edit?title=<%= posts[i].title %>&image=<%= posts[i].image %>&desc=<%= posts[i].desc %>&id=<%= posts[i]._id %>"><i class="fa fa-edit"></i> Edit</a>
+                 &nbsp; 
+                <a href="/delete?id=<%= posts[i]._id %>"><i class="fa fa-trash"></i> Delete</a></div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
+<%- include('../partials/footer'); %>
